@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <!--SWIPER CDN-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!--AOS CDN-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="image/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Pius Osuji</title>
+</head>
+<body>
+ <input type="checkbox" id="check">   
+<header>
+    <label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+    </label>
+    
+    <a href="index.html"><img src="image/logo.svg" alt=""></a>
+        <ul>
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="#skills">Skills</a></li>
+            <li><a class="nav-link" href="#works">Works</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+</header>
+
+<section id="intro">
+    <div class="intro-text">
+        <h1>Hi there, My name is Pius Osuji.<br> I am a Frontend developer, Computer Science student
+            and Freelancer <br>based in Nigeria.
+        </h1>
+        <a href="https://drive.google.com/file/d/19X3ix7ztUCHJYZ-lDg7-2Mx04uXDpW3L/view?usp=sharing" target="_blank"><i class="fas fa-file-download"></i>Download CV</a>
+    </div>
+    <div class="intro-img">
+        <img src="image/dev.svg" alt="">
+    </div>
+</section>
+    
+<section id="skills">
+       <h1 data-aos="fade-up">Creative Skills</h1>
+    <div class="skills-content" data-aos="fade-up">
+       <i class="fab fa-html5 html"></i>
+       <i class="fab fa-css3-alt csss"></i>
+       <i class="fab fa-js"></i>
+       <i class="fab fa-bootstrap"></i>
+       <i class="fab fa-sass"></i>
+       <i class="fab fa-figma"></i>
+    </div>
+</section>
+
+<section id="works">
+    <h1 data-aos="fade-up">Recent Works</h1>
+<div class="swiper-container" data-aos="fade-up">
+    <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <div class="slide-img">
+                  <img src="image/logo.svg" alt="">
+              </div>
+              <div class="slide-text">
+                  <h2>Portfolio Website</h2>
+                  <p>My Personal Portfolio Website
+                      <br>HTML5 || CSS3 || JavaScript
+                  </p>
+                  <a href="https://piusosuji.netlify.app">Live</a>
+                  <a href="https://github.com/PiusOsuji7/Pius">Github</a>
+              </div>
+              
+          </div>
+          <div class="swiper-slide">
+              <div class="slide-img">
+                  <img src="image/works1.svg" alt="">
+              </div>
+              <div class="slide-text">
+                  <h2>DripStore</h2>
+                  <p>Sneakers E-commerce DripStore
+                      <br>HTML5 || SASS || Bootstrap 5
+                  </p>
+                  <a href="https://dripstore.netlify.app" target="_blank">Live</a>
+                  <a href="https://github.com/PiusOsuji7/Dripstore" target="_blank">Github</a>
+              </div>
+             
+          </div>
+          <div class="swiper-slide">
+              <div class="slide-img">
+                  <img src="image/works2.svg" alt="">
+              </div>
+              <div class="slide-text">
+                  <h2>Quiz App</h2>
+                  <p>Question & Answers game
+                    <br>HTML5 || JavaScript || CSS3
+                </p>
+                <a href="https://pius-quiz.netlify.app" target="_blank">Live</a>
+                <a href="https://github.com/PiusOsuji7/Quiz-app" target="_blank">Github</a>
+              </div>
+          </div>
+    </div>
+<!-- Add Pagination -->
+<div class="swiper-pagination"></div>
+</div>
+</section>
+
+<section id="contact">
+    <h1 data-aos="fade-up">Contact</h1>
+    <div class="contact-content" data-aos="fade-up">
+        <div class="contact-info">
+            <h3>Feel free to contact me about work <br>
+            opportunities, collaboration or just to<br> chat 
+        about code. I can be reached<br> in the following ways.</h3><br>
+        <h4>Email</h4>
+        <p>osujipius7@gmail.com</p><br>
+        <h4>Phone</h4>
+        <p>+2347039240546</p><br>
+        <h4>Social</h4>
+        <div class="socials">
+        <a href="https://twitter.com/pius_osuji"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/PiusOsuji7"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/pius-osuji-508884207/"><i class="fab fa-linkedin"></i></a>
+        </div>
+        </div>
+        <div class="contact-form">
+        <form action="https://formsubmit.io/send/osujipius7@gmail.com" method="POST">
+            <input name="_redirect" type="hidden" id="name" value="https://your website url">
+            
+            <input name="name" type="text" placeholder="Name" required>
+            <input name="email" type="Email" placeholder="Email" required>
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Write Your Message"></textarea>
+
+            <input name="_formsubmit_id" type="text" style="display:none">
+
+            <button value="submit" type="submit" id="contact-btn" onclick="popup()">Send Mail</button>
+        </form>
+    </div>
+    </div>
+</section>
+
+<footer>
+    <h3>PIUS@2021</h3>
+</footer>
+
+<!--SWIPER SCRIPT CDN-->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!--AOS SCRIPT-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
