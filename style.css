@@ -19,7 +19,7 @@ body, html{
 }
 
 a{
-   -webkit-tap-highlight-color: #c94c04 !important;
+   -webkit-tap-highlight-color: transparent !important;
     outline: none !important;
 }
 
@@ -361,7 +361,7 @@ body > section#works > div > div.swiper-pagination.swiper-pagination-bullets > s
     border-radius: 10px;
     outline: none;
     cursor: pointer;
-    -webkit-tap-highlight-color: #c94c04 !important;
+    -webkit-tap-highlight-color: transparent !important;
     transition: .3s;
 }
 
