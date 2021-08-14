@@ -36,9 +36,6 @@ header{
     z-index: 999;
     transition: 1s;
 }
-header .sticky{
-    background: #6e66c7;
-}
 
 header img{
     height: 70px;
@@ -413,6 +410,8 @@ footer h3{
         line-height: 100px;
         margin-right: 30px;
         cursor: pointer;
+        -webkit-tap-highlight-color: transparent !important;
+        outline: none !important;
     }
 
     #check:checked ~ header ul{
